@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin|Oswald|Roboto|Tangerine&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Zaffran - The Muguals Cuisine</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navigation -->
+      <nav>
+        <input type="checkbox" id="nav-icon" class="hidden" />
+        <label for="nav-icon" class="nav-btn" class="label">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+
+        <div class="logo">
+          <h1>Zaffran</h1>
+        </div>
+
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#blog">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Home Section -->
+      <section id="home">
+        <p class="banner-main-heading">We make great food since 1980.</p>
+        <p class="banner-primary-heading">Passion for The Perfect Taste</p>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about">
+        <img src="images/about.jpg" alt="" />
+
+        <div class="wrapper">
+          <p class="main-heading">Welcome to Zaffran</p>
+          <h1 class="primary-heading">Discover Our Story</h1>
+          <img src="images/bottom-design.png" alt="" class="title-border" />
+
+          <p class="content">
+            The people, food and the prime locations make Rodich the perfect
+            place good friends & family to come together and have great time.
+            Everytime you perfectly dine with us, it should happy for great
+            inspired food in an environment designed with individual touches
+            unique to the local area. th individual touches unique to the local
+            area.
+          </p>
+        </div>
+      </section>
+
+      <!-- Parallax Section -->
+      <section class="parallax">
+        <p class="main-heading">We create your delicious memories</p>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu">
+        <p class="main-heading">Our special dishes</p>
+        <h1 class="primary-heading">Our Chefs Specialities</h1>
+        <img src="images/bottom-design.png" alt="" class="title-border" />
+
+        <div class="card-grid">
+          <div class="card">
+            <img src="images/dish-1.jpg" alt="" />
+            <h4>Easy Honey Garlic Chicken</h4>
+            <p>$199</p>
+          </div>
+          <div class="card">
+            <img src="images/dish-2.jpg" alt="" />
+            <h4>Asian Salmon in Foil</h4>
+            <p>$249</p>
+          </div>
+          <div class="card">
+            <img src="images/dish-3.jpg" alt="" />
+            <h4>One Pot Chicken Orzo Soup</h4>
+            <p>$409</p>
+          </div>
+          <div class="card">
+            <img src="images/dish-4.jpg" alt="" />
+            <h4>Hawaiian Chicken Salad</h4>
+            <p>$350</p>
+          </div>
+          <div class="card">
+            <img src="images/dish-5.jpg" alt="" />
+            <h4>Creamy Spinach Tortellini</h4>
+            <p>$479</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="blog">
+        <p class="main-heading">Our images collection</p>
+        <h1 class="primary-heading">Restaurant Gallery</h1>
+        <img src="images/bottom-design.png" alt="" class="title-border" />
+
+        <div class="img-grid">
+          <div class="image"><img src="images/g-1.jpg" alt="" /></div>
+          <div class="image"><img src="images/g-2.jpg" alt="" /></div>
+          <div class="image"><img src="images/g-3.jpg" alt="" /></div>
+          <div class="image"><img src="images/g-4.jpg" alt="" /></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <p class="main-heading">Let us serve you</p>
+        <h1 class="primary-heading">Book A Table</h1>
+        <img src="images/bottom-design.png" alt="" class="title-border" />
+        <div class="container">
+          <div class="img-sec">
+            <img src="./images/book_left_image.jpg" alt="" />
+          </div>
+
+          <form action="#">
+            <input type="text" name="name" id="name" placeholder="Name" />
+
+            <input
+              type="number"
+              name="person"
+              id="person"
+              min="1"
+              max="7"
+              placeholder="Number of Person"
+            />
+
+            <input
+              type="tel"
+              name="contact-no"
+              id="contact-no"
+              placeholder="Conatct Number"
+            />
+
+            <select required name="day">
+              <option value="">Select day</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+            </select>
+
+            <select required name="hour">
+              <option value="">Select hour</option>
+              <option value="10-00">10:00</option>
+              <option value="12-00">12:00</option>
+              <option value="14-00">14:00</option>
+              <option value="16-00">16:00</option>
+              <option value="18-00">18:00</option>
+              <option value="20-00">20:00</option>
+              <option value="22-00">22:00</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          All Rights Reserved. © 2020 Zaffran Restaurant | Design By
+          <span>Shoaib Sayyed</span>
+        </p>
+      </footer>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
